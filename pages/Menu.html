@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+
+      <title>Garahe Bistro</title>
+      <link rel="shortcut icon" type="icon" href="../img/GHLogo.jpg"/>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/styleMenu.css">
+     
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar-fixed">
+          <nav>
+            <div class="nav-wrapper">
+                <a href="Index.html" class="brand-logo"><img src="../img/GBCAR.png" class="logo black" alt="Garahe Bistro Icon"
+                  height="50"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="MyCart.html">
+                            My Cart <span id="cartCount" class="new badge black" data-badge-caption="">0</span>
+                        </a></li>
+                </ul>
+            </div>
+          </nav>
+        </div>
+
+        <ul class="sidenav yellow lighten-4" id="mobile-demo">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="MyCart.html">
+                    My Cart <span id="cartCount2" class="new badge black" data-badge-caption="">0</span>
+                </a></li>
+        </ul>
+    </header>
+
+    <main>
+
+      <h2 class="header white-text center-align">MENU</h2>
+      <ul id="tabs-swipe-demo" class="tabs center-align black">
+        <li class="tab col s3"><a href="#test-swipe-1">CHICKEN</a></li>
+        <li class="tab col s3"><a class="active" href="#test-swipe-2">SEAFOOD</a></li>
+        <li class="tab col s3"><a href="#test-swipe-3">BEEF</a></li>
+      </ul>
+ 
+     <div class="container">
+      <div class="menu">
+        <!-- TAB 1 -->
+        <div id="test-swipe-1" class="col s12">
+          <div class="row">
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img1">
+                </div>
+                <div class="card-content"> 
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title1"></h5>
+                      <h6 id="price1"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart1" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail1" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img2">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title2"></h5>
+                      <h6 id="price2"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart2" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail2" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img3">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title3"></h5>
+                      <h6 id="price3"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart3" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail3" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAB 1 -->
+
+        <!-- TAB 2 -->
+        <div id="test-swipe-2" class="col s12">
+          <div class="row">
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img4">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title4"></h5>
+                      <h6 id="price4"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart4" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail4" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc4"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img5">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title5"></h5>
+                      <h6 id="price5"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a  onclick="myFunction()" class="bestS white-text" id="add-cart5" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail5" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc5"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img6">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title6"></h5>
+                      <h6 id="price6"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart6" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail6" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc6"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img7">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title7"></h5>
+                      <h6 id="price7"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <div class="row right-align">
+                        <br>
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart7" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail7" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc7"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img8">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title8"></h5>
+                      <h6 id="price8"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart8" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail8" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc8"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img9">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title9"></h5>
+                      <h6 id="price9"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart9" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail9" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc9"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAB 2 -->
+
+        <!-- TAB 3 -->
+        <div id="test-swipe-3" class="col s12">
+          <div class="row">
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img10">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title10"></h5>
+                      <h6 id="price10"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart10" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail10" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc10"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img11">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title11"></h5>
+                      <h6 id="price11"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart11" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail11" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc11"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m12 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img id="img12">
+                </div>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s12 m12 l6">
+                      <h5 id="title12"></h5>
+                      <h6 id="price12"></h6>
+                    </div>
+                    <div class="col s12 m12 l6">
+                      <br>
+                      <div class="row right-align">
+                        <a onclick="myFunction()" class="bestS white-text" id="add-cart12" href="#!">Add</a>
+                      </div>
+                      <div class="row right-align">
+                        <a class="btn waves-effect waves-light seeDetails" id="detail12" style="background-color: #FFC50C  ;">Details</a>
+                      </div>
+                      <div id="desc12"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAB 3 -->
+      </div>
+     </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l4">
+            <img src="../img/GBLOGO.jpg" height="50">
+          </div>
+          <div class="col s4">
+            <ul>
+              <h5 class="black-text">USEFUL LINKS</h5>
+              <hr> 
+              <li><a class="black-text" href="Index.html">HOME</a></li>
+              <li><a class="black-text" href="Menu.html">MENU</a></li>
+              <li><a class="black-text" href="About.html">ABOUT US</a></li>
+            </ul>
+          </div>
+          <div class="col s12 m12 l4">
+            <ul>
+              <h5 class="black-text">CONTACTS</h5>
+              <hr>
+              <li><i class="material-icons">location_on</i>
+                  Esteros, Cotabato City, PH
+              </li>
+              <li><i class="material-icons">phone</i>
+                0917 400 9233
+              </li>
+              <li><i class="material-icons">watch_later</i>
+                MONDAY - SATURDAY &nbsp; | &nbsp; 10AM - 10PM
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center-align black-text">
+          © 2020 Copyright - All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+    
+  </body>
+
+</html>

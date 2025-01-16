@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <title>Garahe Bistro</title>
+      <link rel="shortcut icon" type="icon" href="../img/GHLogo.jpg"/>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/styleProdView.css">
+
+  </head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav> 
+                <div class="nav-wrapper">
+                    <a href="Index.html" class="brand-logo"><img src="../img/GBCAR.png" class="logo black" alt="Garahe Bistro Icon"
+                        height="50"></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="MyCart.html">
+                                My Cart <span id="cartCount" class="new badge black" data-badge-caption="">0</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <ul class="sidenav yellow lighten-4" id="mobile-demo">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="MyCart.html">
+                    My Cart <span id="cartCount2" class="new badge black" data-badge-caption="">0</span>
+                </a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class=" container container-product">
+            <div class="row">
+                <div class="col s12 m12 l6">
+                    <div> <a href="#"><img id="currentImage" src="" class="responsive"></a></div> 
+                </div>
+                <div class="col s12 m12 l6">
+                    <h2 class="title" id="currentTitle"></h2>
+                    <hr>
+                    <div class="rating-wrap">
+                        <ul class="rating-stars">
+                            <li style="width:100%" class="stars-active">
+                                <p class="label-rating"> <span> <img src="../img/stars-active.svg" alt=""></span>&nbsp;&nbsp;&nbsp;233 reviews | 1254 orders </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="desc" id="currentDesc"></p>
+                        <h4 class="price" id="currentPrice"></h4>
+
+                    </div>
+                    <div class="row">
+                        <div class="col l6">
+                            <h6>Quantity</h6>
+                            <div class="col s2 m2 l2">
+                                <button class="btn" type="button" id="button-minus"> - </button>
+                            </div>
+                            <div class="input-field col s4 m4 l4">
+                                <input type="text" class="form-control" id="quantity-number" value="1" style="color:white; background-color: black ">
+                            </div>
+                            <div class="col s4 m4 l4">
+                                <button class="btn" type="button" id="button-plus"> + </button>                                            
+                            </div>
+                        </div>                    
+                        <div class="col l6 right-align">
+                            <a onclick="myFunction()" class="btn red add-cart" id="add-cart">ADD TO CART</a>
+                            <a href="Menu.html" class="btn waves-effect waves-light btn-menu black-text" style="background-color: #FFC50C  ;">BACK TO MENU</a>    
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="add">
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+                                     
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+            <div class="col s12 m12 l4">
+                <img src="../img/GBLOGO.jpg" height="50">
+            </div>
+            <div class="col s4">
+                <ul>
+                <h5 class="black-text">USEFUL LINKS</h5>
+                <hr> 
+                <li><a class="black-text" href="Index.html">HOME</a></li>
+                <li><a class="black-text" href="Menu.html">MENU</a></li>
+                <li><a class="black-text" href="About.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="col s12 m12 l4">
+                <ul>
+                <h5 class="black-text">CONTACTS</h5>
+                <hr>
+                <li><i class="material-icons">location_on</i>
+                    Esteros, Cotabato City, PH
+                </li>
+                <li><i class="material-icons">phone</i>
+                    0917 400 9233
+                </li>
+                <li><i class="material-icons">watch_later</i>
+                    MONDAY - SATURDAY &nbsp; | &nbsp; 10AM - 10PM
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align black-text">
+            © 2020 Copyright - All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/productview.js"></script>
+
+</body>
+</html>

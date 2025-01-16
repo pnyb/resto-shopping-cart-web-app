@@ -1,0 +1,43 @@
+.wc{
+    color: #000;
+    text-shadow: -1px -1px 0 #FFC50C, 1px -1px 0 #FFC50C, -1px 1px 0 #FFC50C, 2px 1px 0 #fff;
+}
+#thistext{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #FFC50C;
+}
+.tagline{
+    color: #FFC50C;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+}
+.card-title{
+    font-size: xx-small;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.card-image .img{
+    width: 200;
+    height: auto;
+}
+.img{
+    width: 200;
+}
+.parallax-container .valign-wrapper {
+    margin: auto;
+    height: 100%;
+    width: 60%;
+}
+.seeMore{
+    padding: 0em 10em 0em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: bold;
+}
+.click-here{
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: bold;
+}
+.seeM{
+    margin-top: 3%;
+}
